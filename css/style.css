@@ -108,10 +108,13 @@ nav ul button:hover {
 
 /* Imagem */
 .header-block img {
-  width: 50%;
+  width: 57%;
   position: absolute;
   right: 2%;
-  bottom: 2%;
+  bottom: 1.2%;
+
+  transform: translateX(78px);
+  transition: transform 0.4s ease;
 }
 
 .header-block .text {
@@ -135,3 +138,117 @@ nav ul button:hover {
   transform: translateX(-20px);
   transition: transform 0.4s;
 }
+
+/* Product Catalog */
+section .catalog {
+  width: 100vw;
+  padding: 100px;
+}
+
+section .filter-card {
+  width: 980px;
+  height: 150px;
+  background: var(--gray);
+  border-radius: 8px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  width: 700px;
+  height: 50px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  text-indent: 10px;
+}
+
+.search-button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+  color: white;
+  background: var(--blue);
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-button:hover {
+  background: #dedede;
+  color: var(--blue);
+}
+
+.title-wrapper-catalog {
+  margin-top: 150px;
+  padding-bottom: 20px;
+}
+
+/*  =====  Card  ========*/
+section .card-wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 30px;
+  padding-top: 50px;
+}
+
+.card-item {
+  height: 400px;
+  background: var(--gray);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item img {
+  width: 95%;
+
+  transform: translateX(-33px);
+  transition: transform 0.98s;
+}
+.card-item h4 {
+  width: 90%;
+}
+.card-item p {
+  width: 90%;
+  font-style: italic;
+  color: #00000070;
+}
+
+.card-item button {
+  border: none;
+  width: 90%;
+  padding: 15px 0px;
+  background: var(--blue);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.card-item button:hover {
+  background: #dedede;
+  color: var(--blue);
+}
+
+.card-content {
+  height: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/*  =====  /Card  ========*/
